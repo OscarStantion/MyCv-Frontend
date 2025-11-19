@@ -51,7 +51,8 @@ export const STATIC_CV: CvFull = {
     {
       nombre: 'Habilidades',
       items: [
-        { titulo: 'Desarrollo Web: Angular, Java, PHP, HTML, CSS, JavaScript' },
+        { titulo: 'Frontend: HTML, CSS, JavaScript, React, Angular' },
+        { titulo: 'Backend: Node.js, Java, PHP, Spring Boot' },
         { titulo: 'Trabajo en equipo y comunicación' },
         { titulo: 'Resolución de problemas y aprendizaje continuo' }
       ]

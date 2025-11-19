@@ -168,7 +168,8 @@ import type { CvFull } from '../models/cv.model';
             <div class="placeholder-content">
               <div class="placeholder-section">
                 <ul class="skills-list placeholder-skills-list">
-                  <li>Desarrollo Web: Experiencia en frontend y backend, con dominio de Angular, Java, PHP, HTML, CSS y JavaScript.</li>
+                  <li>Frontend: HTML, CSS, JavaScript, React, Angular</li>
+                  <li>Backend: Node.js, Java, PHP, Spring Boot</li>
                   <li>Trabajo en equipo: Colaboración efectiva en proyectos universitarios y en equipos multidisciplinarios.</li>
                   <li>Comunicación: Habilidad para explicar ideas técnicas y documentar proyectos.</li>
                   <li>Aprendizaje constante: Motivación por adquirir nuevas tecnologías y mejorar habilidades técnicas.</li>

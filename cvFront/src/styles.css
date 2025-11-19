@@ -1408,10 +1408,7 @@ h4 {
   /* Mantener la imagen alineada con el header en desktop: no desplazar verticalmente */
   .contact-right .photo-card {
     transform: none !important;
-    /* Subir la tarjeta de la foto ligeramente en desktop para alinearla
-       con el header y evitar que quede demasiado abajo. Ajusta este
-       valor para subir/bajar la imagen (ej: -48px, -32px, 0). */
-    margin-top: -48px !important;
+    margin-top: 0 !important;
     /* levantar ligeramente la tarjeta para que quede alineada con el header */
     margin-bottom: 0 !important;
   }

@@ -1436,3 +1436,16 @@ h4 {
   }
 }
 
+/* ==================================================
+   LAST-RESORT OVERRIDE: Force contact image & socials
+   to have no vertical transform. This wins the cascade
+   and prevents residual translateY rules from applying
+   on any breakpoint. Placed at the end intentionally.
+   ================================================== */
+.contact-right .photo-card,
+.contact-socials {
+  transform: none !important;
+  margin-top: 0 !important;
+}
+
+

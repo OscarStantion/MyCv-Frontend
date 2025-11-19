@@ -1,0 +1,30 @@
+<div class="app-shell">
+  <header class="app-header">
+    <a class="brand" href="#" (click)="startTransitionThenNavigate('/', $event)">
+      <span class="brand-dot"></span>
+      <div class="brand-text">
+        <span class="brand-name">{{ nombre }}</span>
+        <span class="brand-subtitle">{{ profesion }}</span>
+      </div>
+      </a>
+      <!-- Mobile menu toggle (visible only on small screens) -->
+      <button class="mobile-menu-button" aria-label="Abrir menú" (click)="toggleMobileNav($event)" [attr.aria-expanded]="mobileNavOpen" [class.open]="mobileNavOpen">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="main-nav" [class.open]="mobileNavOpen">
+        <a href="#" (click)="startTransitionThenNavigate('/curriculum', $event); closeMobileNav()">Currículum</a>
+        <a href="#" (click)="startTransitionThenNavigate('/proyectos', $event); closeMobileNav()">Proyectos</a>
+        <a href="#" (click)="startTransitionThenNavigate('/contacto', $event); closeMobileNav()">Contacto</a>
+      </nav>
+  </header>
+
+  <main class="main-content">
+    <div #routeContainer id="route-container" class="route-container" role="main">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+  <app-notification></app-notification>
+</div>

@@ -1406,20 +1406,26 @@ h4 {
 
 /* Ajustes adicionales: reducir desplazamiento en desktop y ajustar tamaño en tablets */
 @media (min-width: 901px) {
-  /* menos translate para mantener composición sin tanto solapamiento */
+  /* Mantener la imagen alineada con el header en desktop: no desplazar verticalmente */
   .contact-right .photo-card {
-    transform: translateY(-80px) !important;
+    transform: none !important;
+    margin-top: 0 !important;
   }
+  /* Asegurar que los iconos sociales estén visibles y no suban por encima */
   .contact-socials {
-    transform: translateY(-60px) !important;
+    transform: none !important;
+    margin-top: 1rem !important;
   }
+  /* Reducir el padding superior del contenedor para que header y contenido queden en la misma línea visual */
+  .contact-inner { padding-top: 0.75rem !important; }
 }
 
 /* Tablets: limitar tamaño de la tarjeta/imagen para evitar solapamientos intermedios */
 @media (min-width: 601px) and (max-width: 900px) {
+  /* Tablets: limitar tamaño de la tarjeta/imagen y evitar desplazamientos grandes */
   .contact-right .photo-card {
     max-width: 320px;
-    transform: translateY(-48px) !important;
+    transform: none !important;
     margin-top: 0.5rem !important;
   }
   .contact-right img {
